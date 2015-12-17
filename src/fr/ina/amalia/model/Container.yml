@@ -1,0 +1,41 @@
+fr\ina\amalia\model\Container:
+    xml_root_name: container
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        segments:
+            expose: true
+            access_type: public_method
+            serialized_name: segments
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getSegments
+                setter: setSegments
+            type: array<fr\ina\amalia\model\Segment>
+            xml_list:
+                inline: false
+                entry_name: segment
+                namespace: 'http://research.ina.fr'
+        contents:
+            expose: true
+            access_type: public_method
+            serialized_name: contents
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getContents
+                setter: setContents
+            type: array<fr\ina\amalia\model\Content>
+            xml_list:
+                inline: false
+                entry_name: content
+                namespace: 'http://research.ina.fr'
