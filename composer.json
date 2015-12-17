@@ -3,6 +3,7 @@
   "version": "0.6.0",
   "type": "library",
   "license": "GPL-V3",
+  "minimum-stability": "0.0.6",
   "keywords": [
     "amalia",
     "amalia-js"
