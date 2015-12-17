@@ -1,9 +1,7 @@
 {
   "name": "ina/amalia-model",
-  "version": "0.6.0",
   "type": "library",
   "license": "GPL-V3",
-  "minimum-stability": "0.0.6",
   "keywords": [
     "amalia",
     "amalia-js"
@@ -36,5 +34,11 @@
       "type": "vcs",
       "url": "https://github.com/goetas/serializer.git"
     }
-  ]
+  ],
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.6"
+    }
+  }
 }
