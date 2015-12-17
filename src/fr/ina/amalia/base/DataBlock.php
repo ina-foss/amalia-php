@@ -20,7 +20,6 @@
  */
 namespace fr\ina\amalia\base;
 
-use fr\ina\amalia\base\DataBlockInterface;
 use fr\ina\amalia\model\Data;
 use fr\ina\amalia\model\Histogram;
 

@@ -23,8 +23,8 @@
 namespace fr\ina\amalia\factory;
 
 use fr\ina\amalia\base\DataBlock;
-use fr\ina\amalia\base\MetadataBlock;
 use fr\ina\amalia\base\LocalisationBlock;
+use fr\ina\amalia\base\MetadataBlock;
 use JMS\Serializer\SerializerBuilder;
 
 /**

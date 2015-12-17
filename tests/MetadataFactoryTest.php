@@ -3,7 +3,6 @@
 require('vendor/autoload.php');
 
 use fr\ina\amalia\factory\MetadataFactory;
-use fr\ina\amalia\base\MetadataBlock;
 
 class MetadataFactoryTest extends PHPUnit_Framework_TestCase
 {

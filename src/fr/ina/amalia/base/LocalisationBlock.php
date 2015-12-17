@@ -22,11 +22,8 @@
 
 namespace fr\ina\amalia\base;
 
-use fr\ina\amalia\base\LocalisationBlockInterface;
 use fr\ina\amalia\model\Localisation;
 use fr\ina\amalia\model\Sublocalisations;
-use fr\ina\amalia\model\Data;
-use fr\ina\amalia\base\DataBlock;
 
 class LocalisationBlock implements LocalisationBlockInterface
 {
@@ -53,6 +50,11 @@ class LocalisationBlock implements LocalisationBlockInterface
         }
 
         return $localisationBlock;
+    }
+
+    public function getLocalisation()
+    {
+        return $this->localisation;
     }
 
     public function addDataBlock($dataBlock)
@@ -118,12 +120,6 @@ class LocalisationBlock implements LocalisationBlockInterface
     {
         $this->localisation->setData($data);
         return $this;
-    }
-
-
-    public function getLocalisation()
-    {
-        return $this->localisation;
     }
 
     public function getTcLevel()

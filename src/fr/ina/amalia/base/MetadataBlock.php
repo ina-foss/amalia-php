@@ -21,9 +21,6 @@
 namespace fr\ina\amalia\base;
 
 use fr\ina\amalia\model\Metadata;
-use fr\ina\amalia\base\DataBlock;
-use fr\ina\amalia\base\LocalisationBlock;
-use fr\ina\amalia\base\MetadataBlockInterface;
 
 class MetadataBlock implements MetadataBlockInterface
 {
@@ -66,12 +63,6 @@ class MetadataBlock implements MetadataBlockInterface
         return $_localisationBlock;
     }
 
-    public function addLocalisationBlock($_localisationBlock)
-    {
-        $this->getRootLocalisationBlock()->addLocalisationBlock($_localisationBlock);
-        return $_localisationBlock;
-    }
-
     public function addToRootLocalisationBlock($_localisationBlock)
     {
         if ($this->localisationBlock == null) {
@@ -82,6 +73,16 @@ class MetadataBlock implements MetadataBlockInterface
         return $_localisationBlock;
     }
 
+    public function addLocalisationBlock($_localisationBlock)
+    {
+        $this->getRootLocalisationBlock()->addLocalisationBlock($_localisationBlock);
+        return $_localisationBlock;
+    }
+
+    public function getRootLocalisationBlock()
+    {
+        return $this->localisationBlock;
+    }
 
     public function getDataBlock()
     {
@@ -89,11 +90,6 @@ class MetadataBlock implements MetadataBlockInterface
             $this->metadata->setData(new Data());
         }
         return new DataBlock($this->metadata->getData());
-    }
-
-    public function getRootLocalisationBlock()
-    {
-        return $this->localisationBlock;
     }
 
     public function getTcLevel()
