@@ -147,7 +147,7 @@ class MetadataFactory implements MetadataFactoryInterface
     private static function getSerializer()
     {
         return SerializerBuilder::create()
-            ->addMetadataDir('src/fr/ina/amalia/model/', 'fr\ina\amalia\model')
+            ->addMetadataDir(__DIR__ . '/../model/', 'fr\ina\amalia\model')
             ->setDebug(false)
             ->build();
     }
