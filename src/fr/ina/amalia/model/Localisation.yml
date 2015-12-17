@@ -1,0 +1,119 @@
+fr\ina\amalia\model\Localisation:
+    xml_root_name: localisation
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: label
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            xml_attribute: true
+            type: string
+        thumb:
+            expose: true
+            access_type: public_method
+            serialized_name: thumb
+            accessor:
+                getter: getThumb
+                setter: setThumb
+            xml_attribute: true
+            type: string
+        channel:
+            expose: true
+            access_type: public_method
+            serialized_name: channel
+            accessor:
+                getter: getChannel
+                setter: setChannel
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        tcin:
+            expose: true
+            access_type: public_method
+            serialized_name: tcin
+            accessor:
+                getter: getTcin
+                setter: setTcin
+            xml_attribute: true
+            type: string
+        tcout:
+            expose: true
+            access_type: public_method
+            serialized_name: tcout
+            accessor:
+                getter: getTcout
+                setter: setTcout
+            xml_attribute: true
+            type: string
+        tc:
+            expose: true
+            access_type: public_method
+            serialized_name: tc
+            accessor:
+                getter: getTc
+                setter: setTc
+            xml_attribute: true
+            type: string
+        tclevel:
+            expose: true
+            access_type: public_method
+            serialized_name: tclevel
+            accessor:
+                getter: getTclevel
+                setter: setTclevel
+            xml_attribute: true
+            type: integer
+        score:
+            expose: true
+            access_type: public_method
+            serialized_name: score
+            accessor:
+                getter: getScore
+                setter: setScore
+            xml_attribute: true
+            type: float
+        shape:
+            expose: true
+            access_type: public_method
+            serialized_name: shape
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getShape
+                setter: setShape
+            type: fr\ina\amalia\model\Shape
+        data:
+            expose: true
+            access_type: public_method
+            serialized_name: data
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getData
+                setter: setData
+            type: fr\ina\amalia\model\Data
+        sublocalisations:
+            expose: true
+            access_type: public_method
+            serialized_name: sublocalisations
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getSublocalisations
+                setter: setSublocalisations
+            type: fr\ina\amalia\model\Sublocalisations
+            xml_list:
+                inline: false
+                entry_name: localisation
+                namespace: 'http://research.ina.fr'

@@ -1,0 +1,20 @@
+fr\ina\amalia\model\PtType:
+    properties:
+        x:
+            expose: true
+            access_type: public_method
+            serialized_name: x
+            accessor:
+                getter: getX
+                setter: setX
+            xml_attribute: true
+            type: float
+        'y':
+            expose: true
+            access_type: public_method
+            serialized_name: 'y'
+            accessor:
+                getter: getY
+                setter: setY
+            xml_attribute: true
+            type: float

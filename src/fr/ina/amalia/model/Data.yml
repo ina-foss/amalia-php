@@ -1,0 +1,111 @@
+fr\ina\amalia\model\Data:
+    xml_root_name: data
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        score:
+            expose: true
+            access_type: public_method
+            serialized_name: score
+            accessor:
+                getter: getScore
+                setter: setScore
+            xml_attribute: true
+            type: float
+        clazz:
+            expose: true
+            access_type: public_method
+            serialized_name: clazz
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getClazz
+                setter: setClazz
+            xml_list:
+                inline: true
+                entry_name: clazz
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Clazz>
+        clazzref:
+            expose: true
+            access_type: public_method
+            serialized_name: clazzref
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getClazzref
+                setter: setClazzref
+            xml_list:
+                inline: true
+                entry_name: clazzref
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Clazzref>
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: annotation
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            xml_list:
+                inline: true
+                entry_name: annotation
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Annotation>
+        attribute:
+            expose: true
+            access_type: public_method
+            serialized_name: attribute
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getAttribute
+                setter: setAttribute
+            xml_list:
+                inline: true
+                entry_name: attribute
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Attribute>
+        histogram:
+            expose: true
+            access_type: public_method
+            serialized_name: histogram
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getHistogram
+                setter: setHistogram
+            xml_list:
+                inline: true
+                entry_name: histogram
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Histogram>
+        text:
+            expose: true
+            access_type: public_method
+            serialized_name: text
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getText
+                setter: setText
+            xml_list:
+                inline: true
+                entry_name: text
+                namespace: 'http://research.ina.fr'
+            type: array<string>
+        formated:
+            expose: true
+            access_type: public_method
+            serialized_name: formated
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getFormated
+                setter: setFormated
+            xml_list:
+                inline: true
+                entry_name: formated
+                namespace: 'http://research.ina.fr'
+            type: array<string>

@@ -1,0 +1,84 @@
+fr\ina\amalia\model\Segment:
+    xml_root_name: segment
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        mime:
+            expose: true
+            access_type: public_method
+            serialized_name: mime
+            accessor:
+                getter: getMime
+                setter: setMime
+            xml_attribute: true
+            type: string
+        tcin:
+            expose: true
+            access_type: public_method
+            serialized_name: tcin
+            accessor:
+                getter: getTcin
+                setter: setTcin
+            xml_attribute: true
+            type: string
+        tcout:
+            expose: true
+            access_type: public_method
+            serialized_name: tcout
+            accessor:
+                getter: getTcout
+                setter: setTcout
+            xml_attribute: true
+            type: string
+        nativeId:
+            expose: true
+            access_type: public_method
+            serialized_name: nativeId
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getNativeId
+                setter: setNativeId
+            type: string
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: label
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            type: string
+        uri:
+            expose: true
+            access_type: public_method
+            serialized_name: uri
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getUri
+                setter: setUri
+            type: string
+        channels:
+            expose: true
+            access_type: public_method
+            serialized_name: channels
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getChannels
+                setter: setChannels
+            type: array<fr\ina\amalia\model\Channel>
+            xml_list:
+                inline: false
+                entry_name: channel
+                namespace: 'http://research.ina.fr'

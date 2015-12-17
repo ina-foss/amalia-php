@@ -1,0 +1,36 @@
+fr\ina\amalia\model\EditlistChannel:
+    xml_root_name: editlistChannel
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        editlistSegment:
+            expose: true
+            access_type: public_method
+            serialized_name: editlistSegment
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getEditlistSegment
+                setter: setEditlistSegment
+            xml_list:
+                inline: true
+                entry_name: editlistSegment
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\EditlistSegment>

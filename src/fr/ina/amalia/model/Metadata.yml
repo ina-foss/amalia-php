@@ -1,0 +1,119 @@
+fr\ina\amalia\model\Metadata:
+    xml_root_name: metadata
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: label
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        rootDirectory:
+            expose: true
+            access_type: public_method
+            serialized_name: rootDirectory
+            accessor:
+                getter: getRootDirectory
+                setter: setRootDirectory
+            xml_attribute: true
+            type: string
+        enrich:
+            expose: true
+            access_type: public_method
+            serialized_name: enrich
+            accessor:
+                getter: getEnrich
+                setter: setEnrich
+            xml_attribute: true
+            type: string
+        algorithm:
+            expose: true
+            access_type: public_method
+            serialized_name: algorithm
+            accessor:
+                getter: getAlgorithm
+                setter: setAlgorithm
+            xml_attribute: true
+            type: string
+        processor:
+            expose: true
+            access_type: public_method
+            serialized_name: processor
+            accessor:
+                getter: getProcessor
+                setter: setProcessor
+            xml_attribute: true
+            type: string
+        processed:
+            expose: true
+            access_type: public_method
+            serialized_name: processed
+            accessor:
+                getter: getProcessed
+                setter: setProcessed
+            xml_attribute: true
+            type: Goetas\Xsd\XsdToPhp\XMLSchema\DateTime
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: integer
+        viewControl:
+            expose: true
+            access_type: public_method
+            serialized_name: viewControl
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getViewControl
+                setter: setViewControl
+            type: fr\ina\amalia\model\ViewControl
+        data:
+            expose: true
+            access_type: public_method
+            serialized_name: data
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getData
+                setter: setData
+            type: fr\ina\amalia\model\Data
+        localisation:
+            expose: true
+            access_type: public_method
+            serialized_name: localisation
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getLocalisation
+                setter: setLocalisation
+            xml_list:
+                inline: true
+                entry_name: localisation
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Localisation>

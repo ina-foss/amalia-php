@@ -1,0 +1,18 @@
+fr\ina\amalia\model\Metadatas:
+    xml_root_name: metadatas
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        metadata:
+            expose: true
+            access_type: public_method
+            serialized_name: metadata
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getMetadata
+                setter: setMetadata
+            xml_list:
+                inline: true
+                entry_name: metadata
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Metadata>
