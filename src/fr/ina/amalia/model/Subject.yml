@@ -1,0 +1,14 @@
+fr\ina\amalia\model\Subject:
+    xml_root_name: subject
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        clazz:
+            expose: true
+            access_type: public_method
+            serialized_name: clazz
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getClazz
+                setter: setClazz
+            type: fr\ina\amalia\model\Clazz

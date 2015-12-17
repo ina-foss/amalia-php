@@ -1,0 +1,12 @@
+{
+  "localisation": [
+    {
+      "type": "test",
+      "tcin": "00:00:00.0000",
+      "tcout": "00:01:00.0000",
+      "tclevel": 0
+    }
+  ],
+  "id": "amalia-simple",
+  "type": "test"
+}

@@ -1,0 +1,30 @@
+fr\ina\amalia\model\Attribute:
+    xml_root_name: attribute
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        score:
+            expose: true
+            access_type: public_method
+            serialized_name: score
+            accessor:
+                getter: getScore
+                setter: setScore
+            xml_attribute: true
+            type: float

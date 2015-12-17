@@ -1,0 +1,23 @@
+{
+  "id": "amalia-simple",
+  "type": "test",
+  "localisation": [
+    {
+      "type": "test",
+      "tcin": "00:00:00.0000",
+      "tcout": "00:01:00.0000",
+      "tclevel": 0,
+      "data": {
+        "histogram": [
+          {
+            "nbbins": 2048,
+            "posmax": "",
+            "negmax": "",
+            "posbins": "",
+            "negbins": ""
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+fr\ina\amalia\model\Contents:
+    xml_root_name: contents
+    xml_root_namespace: 'http://research.ina.fr'
+    properties:
+        content:
+            expose: true
+            access_type: public_method
+            serialized_name: content
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getContent
+                setter: setContent
+            xml_list:
+                inline: true
+                entry_name: content
+                namespace: 'http://research.ina.fr'
+            type: array<fr\ina\amalia\model\Content>
