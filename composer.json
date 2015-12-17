@@ -3,6 +3,7 @@
   "type": "library",
   "license": "GPL-V3",
   "homepage": "https://ina-foss.github.io/amalia.js",
+  "minimum-stability": "dev",
   "keywords": [
     "amalia",
     "amalia-js"
@@ -37,7 +38,6 @@
       "url": "https://github.com/goetas/serializer.git"
     }
   ],
-  "minimum-stability": "dev",
   "extra": {
     "branch-alias": {
       "dev-master": "0.1-dev"
