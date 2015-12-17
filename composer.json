@@ -2,6 +2,7 @@
   "name": "ina/amalia-model",
   "type": "library",
   "license": "GPL-V3",
+  "homepage": "https://ina-foss.github.io/amalia.js",
   "keywords": [
     "amalia",
     "amalia-js"
@@ -25,6 +26,7 @@
     "phpunit/phpunit": "4.0.*"
   },
   "require": {
+    "php": ">=5.4.0",
     "goetas/xsd2php": "2.*@dev",
     "goetas/xsd-reader": "2.*@dev",
     "jms/serializer": "xsd2php-dev as 0.18.0"
@@ -38,7 +40,7 @@
   "minimum-stability": "dev",
   "extra": {
     "branch-alias": {
-      "dev-master": "0.1.x-dev"
+      "dev-master": "0.1-dev"
     }
   }
 }
