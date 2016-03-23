@@ -5,7 +5,7 @@ namespace fr\ina\amalia\model;
 /**
  * Class representing PtType
  *
- *
+ * 
  * XSD Type: ptType
  */
 class PtType

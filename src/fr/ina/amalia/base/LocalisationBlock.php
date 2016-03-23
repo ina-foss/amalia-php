@@ -60,6 +60,12 @@ class LocalisationBlock implements LocalisationBlockInterface
         $this->localisation->setData($dataBlock->getData());
     }
 
+    public function setId($id)
+    {
+        $this->localisation->setId($id);
+        return $this;
+    }
+
     public function setLabel($label)
     {
         $this->localisation->setLabel($label);

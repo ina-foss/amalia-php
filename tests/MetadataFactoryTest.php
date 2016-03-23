@@ -1,9 +1,9 @@
 <?php
 
-require('./vendor/autoload.php');
+require(__DIR__.'/../vendor/autoload.php');
 
 use fr\ina\amalia\factory\MetadataFactory;
-use fr\ina\amalia\base\MetadataBlock;
+
 
 class MetadataFactoryTest extends PHPUnit_Framework_TestCase
 {
@@ -25,7 +25,11 @@ class MetadataFactoryTest extends PHPUnit_Framework_TestCase
         $id = 'amalia-simple';
         $type = 'test';
         $tc = "00:05:00.0000";
+
+        /* @var $localisation \fr\ina\amalia\base\LocalisationBlock */
         $localisation = MetadataFactory::createLocalisationBlockTc($tc);
+        $localisation->setId('loc-id-1');
+        $localisation->setType($type);
         $localisation->setTclevel(0);
         $localisation->setType($type);
 
@@ -43,9 +47,11 @@ class MetadataFactoryTest extends PHPUnit_Framework_TestCase
         $type = 'test';
         $tcin = "00:00:00.0000";
         $tcout = "00:01:00.0000";
+
         $localisation = MetadataFactory::createLocalisationBlockTcinAndTcout($tcin, $tcout);
         $localisation->setTclevel(0);
         $localisation->setType($type);
+
         $metadataBloc = MetadataFactory::createMetadataBlockWithLocalisation($id, $type, $localisation);
         $serializedJSON = MetadataFactory::getSerializedJSON($metadataBloc);
         $this->assertEquals(get_class($metadataBloc), 'fr\ina\amalia\base\MetadataBlock');
@@ -64,6 +70,7 @@ class MetadataFactoryTest extends PHPUnit_Framework_TestCase
         $localisation = MetadataFactory::createLocalisationBlockTcinAndTcout($tcin, $tcout);
         $localisation->setTclevel(0);
         $localisation->setType($type);
+
         /* @var $metadataBloc fr\ina\amalia\base\MetadataBlock */
         $metadataBloc = MetadataFactory::createMetadataBlockWithLocalisation($id, $type, $localisation);
 

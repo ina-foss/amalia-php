@@ -9,6 +9,11 @@ class Localisation
 {
 
     /**
+     * @property string $id
+     */
+    private $id = null;
+
+    /**
      * @property string $label
      */
     private $label = null;
@@ -64,9 +69,31 @@ class Localisation
     private $data = null;
 
     /**
-     * @property \fr\ina\amalia\model\Sublocalisations $sublocalisations
+     * @property \fr\ina\amalia\model\Localisation[] $sublocalisations
      */
     private $sublocalisations = null;
+
+    /**
+     * Gets as id
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Sets a new id
+     *
+     * @param string $id
+     * @return self
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
 
     /**
      * Gets as label
@@ -308,6 +335,40 @@ class Localisation
     {
         $this->data = $data;
         return $this;
+    }
+
+    /**
+     * Adds as localisation
+     *
+     * @return self
+     * @param \fr\ina\amalia\model\Localisation $localisation
+     */
+    public function addToSublocalisations(\fr\ina\amalia\model\Localisation $localisation)
+    {
+        $this->sublocalisations[] = $localisation;
+        return $this;
+    }
+
+    /**
+     * isset sublocalisations
+     *
+     * @param scalar $index
+     * @return boolean
+     */
+    public function issetSublocalisations($index)
+    {
+        return isset($this->sublocalisations[$index]);
+    }
+
+    /**
+     * unset sublocalisations
+     *
+     * @param scalar $index
+     * @return void
+     */
+    public function unsetSublocalisations($index)
+    {
+        unset($this->sublocalisations[$index]);
     }
 
     /**

@@ -29,12 +29,12 @@ class Content
     private $height = null;
 
     /**
-     * @property \fr\ina\amalia\model\Editlist $editlist
+     * @property \fr\ina\amalia\model\EditlistChannel[] $editlist
      */
     private $editlist = null;
 
     /**
-     * @property \fr\ina\amalia\model\Metadatas $metadatas
+     * @property \fr\ina\amalia\model\Metadata[] $metadatas
      */
     private $metadatas = null;
 
@@ -127,9 +127,43 @@ class Content
     }
 
     /**
+     * Adds as editlistChannel
+     *
+     * @return self
+     * @param \fr\ina\amalia\model\EditlistChannel $editlistChannel
+     */
+    public function addToEditlist(\fr\ina\amalia\model\EditlistChannel $editlistChannel)
+    {
+        $this->editlist[] = $editlistChannel;
+        return $this;
+    }
+
+    /**
+     * isset editlist
+     *
+     * @param scalar $index
+     * @return boolean
+     */
+    public function issetEditlist($index)
+    {
+        return isset($this->editlist[$index]);
+    }
+
+    /**
+     * unset editlist
+     *
+     * @param scalar $index
+     * @return void
+     */
+    public function unsetEditlist($index)
+    {
+        unset($this->editlist[$index]);
+    }
+
+    /**
      * Gets as editlist
      *
-     * @return \fr\ina\amalia\model\Editlist
+     * @return \fr\ina\amalia\model\EditlistChannel[]
      */
     public function getEditlist()
     {
@@ -139,19 +173,53 @@ class Content
     /**
      * Sets a new editlist
      *
-     * @param \fr\ina\amalia\model\Editlist $editlist
+     * @param \fr\ina\amalia\model\EditlistChannel[] $editlist
      * @return self
      */
-    public function setEditlist(\fr\ina\amalia\model\Editlist $editlist)
+    public function setEditlist(array $editlist)
     {
         $this->editlist = $editlist;
         return $this;
     }
 
     /**
+     * Adds as metadata
+     *
+     * @return self
+     * @param \fr\ina\amalia\model\Metadata $metadata
+     */
+    public function addToMetadatas(\fr\ina\amalia\model\Metadata $metadata)
+    {
+        $this->metadatas[] = $metadata;
+        return $this;
+    }
+
+    /**
+     * isset metadatas
+     *
+     * @param scalar $index
+     * @return boolean
+     */
+    public function issetMetadatas($index)
+    {
+        return isset($this->metadatas[$index]);
+    }
+
+    /**
+     * unset metadatas
+     *
+     * @param scalar $index
+     * @return void
+     */
+    public function unsetMetadatas($index)
+    {
+        unset($this->metadatas[$index]);
+    }
+
+    /**
      * Gets as metadatas
      *
-     * @return \fr\ina\amalia\model\Metadatas
+     * @return \fr\ina\amalia\model\Metadata[]
      */
     public function getMetadatas()
     {
@@ -161,10 +229,10 @@ class Content
     /**
      * Sets a new metadatas
      *
-     * @param \fr\ina\amalia\model\Metadatas $metadatas
+     * @param \fr\ina\amalia\model\Metadata[] $metadatas
      * @return self
      */
-    public function setMetadatas(\fr\ina\amalia\model\Metadatas $metadatas)
+    public function setMetadatas(array $metadatas)
     {
         $this->metadatas = $metadatas;
         return $this;

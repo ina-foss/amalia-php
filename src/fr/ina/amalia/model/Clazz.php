@@ -14,6 +14,11 @@ class Clazz
     private $id = null;
 
     /**
+     * @property string $referentialId
+     */
+    private $referentialId = null;
+
+    /**
      * @property string $type
      */
     private $type = null;
@@ -34,6 +39,11 @@ class Clazz
     private $attribute = null;
 
     /**
+     * @property string $label
+     */
+    private $label = null;
+
+    /**
      * Gets as id
      *
      * @return string
@@ -52,6 +62,28 @@ class Clazz
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * Gets as referentialId
+     *
+     * @return string
+     */
+    public function getReferentialId()
+    {
+        return $this->referentialId;
+    }
+
+    /**
+     * Sets a new referentialId
+     *
+     * @param string $referentialId
+     * @return self
+     */
+    public function setReferentialId($referentialId)
+    {
+        $this->referentialId = $referentialId;
         return $this;
     }
 
@@ -208,6 +240,28 @@ class Clazz
     public function setAttribute(array $attribute)
     {
         $this->attribute = $attribute;
+        return $this;
+    }
+
+    /**
+     * Gets as label
+     *
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * Sets a new label
+     *
+     * @param string $label
+     * @return self
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
         return $this;
     }
 

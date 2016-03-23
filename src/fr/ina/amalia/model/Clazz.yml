@@ -11,6 +11,15 @@ fr\ina\amalia\model\Clazz:
                 setter: setId
             xml_attribute: true
             type: string
+        referentialId:
+            expose: true
+            access_type: public_method
+            serialized_name: referentialId
+            accessor:
+                getter: getReferentialId
+                setter: setReferentialId
+            xml_attribute: true
+            type: string
         type:
             expose: true
             access_type: public_method
@@ -57,3 +66,13 @@ fr\ina\amalia\model\Clazz:
                 entry_name: attribute
                 namespace: 'http://research.ina.fr'
             type: array<fr\ina\amalia\model\Attribute>
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: label
+            xml_element:
+                namespace: 'http://research.ina.fr'
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            type: string

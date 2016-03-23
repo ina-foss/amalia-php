@@ -20,7 +20,7 @@
     ]
   },
   "scripts": {
-    "generate-source": "php bin/xsd2php.php convert:php  resources/amalia-model-0.2.5.xsd --ns-map=http://research.ina.fr;fr/ina/amalia/model/ --ns-dest=fr/ina/amalia/model/;src/fr/ina/amalia/model/",
+    "generate-source": "php bin/xsd2php.php convert:php resources/amalia-model-0.2.5.xsd --ns-map=http://research.ina.fr;fr/ina/amalia/model/ --ns-dest=fr/ina/amalia/model/;src/fr/ina/amalia/model/",
     "generate-jms": "php bin/xsd2php.php convert:jms-yaml resources/amalia-model-0.2.5.xsd --ns-map=http://research.ina.fr;fr/ina/amalia/model/ --ns-dest=fr/ina/amalia/model/;src/fr/ina/amalia/model/"
   },
   "require-dev": {

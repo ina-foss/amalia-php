@@ -11,15 +11,6 @@ fr\ina\amalia\model\Clazzref:
                 setter: setId
             xml_attribute: true
             type: string
-        referentialId:
-            expose: true
-            access_type: public_method
-            serialized_name: referentialId
-            accessor:
-                getter: getReferentialId
-                setter: setReferentialId
-            xml_attribute: true
-            type: string
         score:
             expose: true
             access_type: public_method

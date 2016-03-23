@@ -13,4 +13,4 @@ PHP implementation of the metadata model behind amalia.js
 	
 # Reload autoload
 
-    composer dump-autoload
+     composer dump-autoload

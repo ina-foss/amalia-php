@@ -2,6 +2,15 @@ fr\ina\amalia\model\Localisation:
     xml_root_name: localisation
     xml_root_namespace: 'http://research.ina.fr'
     properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
         label:
             expose: true
             access_type: public_method

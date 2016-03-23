@@ -14,11 +14,6 @@ class Clazzref
     private $id = null;
 
     /**
-     * @property string $referentialId
-     */
-    private $referentialId = null;
-
-    /**
      * @property float $score
      */
     private $score = null;
@@ -42,28 +37,6 @@ class Clazzref
     public function setId($id)
     {
         $this->id = $id;
-        return $this;
-    }
-
-    /**
-     * Gets as referentialId
-     *
-     * @return string
-     */
-    public function getReferentialId()
-    {
-        return $this->referentialId;
-    }
-
-    /**
-     * Sets a new referentialId
-     *
-     * @param string $referentialId
-     * @return self
-     */
-    public function setReferentialId($referentialId)
-    {
-        $this->referentialId = $referentialId;
         return $this;
     }
 

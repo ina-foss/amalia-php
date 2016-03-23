@@ -44,7 +44,7 @@ class Segment
     private $uri = null;
 
     /**
-     * @property \fr\ina\amalia\model\Channels $channels
+     * @property \fr\ina\amalia\model\Channel[] $channels
      */
     private $channels = null;
 
@@ -203,9 +203,43 @@ class Segment
     }
 
     /**
+     * Adds as channel
+     *
+     * @return self
+     * @param \fr\ina\amalia\model\Channel $channel
+     */
+    public function addToChannels(\fr\ina\amalia\model\Channel $channel)
+    {
+        $this->channels[] = $channel;
+        return $this;
+    }
+
+    /**
+     * isset channels
+     *
+     * @param scalar $index
+     * @return boolean
+     */
+    public function issetChannels($index)
+    {
+        return isset($this->channels[$index]);
+    }
+
+    /**
+     * unset channels
+     *
+     * @param scalar $index
+     * @return void
+     */
+    public function unsetChannels($index)
+    {
+        unset($this->channels[$index]);
+    }
+
+    /**
      * Gets as channels
      *
-     * @return \fr\ina\amalia\model\Channels
+     * @return \fr\ina\amalia\model\Channel[]
      */
     public function getChannels()
     {
@@ -215,10 +249,10 @@ class Segment
     /**
      * Sets a new channels
      *
-     * @param \fr\ina\amalia\model\Channels $channels
+     * @param \fr\ina\amalia\model\Channel[] $channels
      * @return self
      */
-    public function setChannels(\fr\ina\amalia\model\Channels $channels)
+    public function setChannels(array $channels)
     {
         $this->channels = $channels;
         return $this;

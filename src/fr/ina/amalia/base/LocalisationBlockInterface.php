@@ -24,7 +24,6 @@ namespace fr\ina\amalia\base;
 interface LocalisationBlockInterface
 {
 
-
     public function addLocalisationBlock($localisationBlock);
 
     public function addDataBlock($dataBlock);
@@ -34,6 +33,8 @@ interface LocalisationBlockInterface
     public function setThumb($thumb);
 
     public function setChannel($channel);
+
+    public function setId($id);
 
     public function setType($type);
 
