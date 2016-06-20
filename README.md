@@ -4,7 +4,7 @@ PHP implementation of the metadata model behind amalia.js
 
 Installation
 -----------
-There is one recommended way to install xsd2php via [Composer](https://getcomposer.org/):
+There is one recommended way to install amalia-model via [Composer](https://getcomposer.org/):
 
 * adding the dependency to your ``composer.json`` file:
 
